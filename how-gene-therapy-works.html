@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Gene Therapy Works</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <button onclick="window.location.href='index.html'">Go Home</button>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="topics.html">Topics</a>
+            <a href="members.html">Members</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section id="how-gene-therapy-works" class="content">
+        <div class="container">
+            <h1>How Gene Therapy Works</h1>
+            <div class="text-left">
+                <p>Gene therapy works by introducing, removing, or altering genetic material within a patient’s cells:</p>
+                <ul>
+                    <li><strong>Gene Addition:</strong> In cases where a gene is missing or non-functional, a healthy copy of the gene can be inserted into the cells to restore function.</li>
+                    <li><strong>Gene Editing:</strong> Techniques like CRISPR allow for precise editing of DNA to correct mutations at specific sites within the genome.</li>
+                    <li><strong>Gene Silencing or Inactivation:</strong> In cases where a harmful gene is overactive, gene therapy can silence or reduce its expression.</li>
+                </ul>
+                <p>The delivery of these genes into the body typically uses modified viruses (which have had their disease-causing capabilities removed) or other vectors that can effectively transport the gene into the target cells.</p>
+            </div>
+            <div class="image-slider">
+                <div class="slide">
+                    <img src="images/gene-addition.jpg" alt="Gene Addition" class="image-slide" onclick="openFullscreen(this)">
+                    <p>Gene Addition</p>
+                </div>
+                <div class="slide">
+                    <img src="images/gene-editing.png" alt="Gene Editing" class="image-slide" onclick="openFullscreen(this)">
+                    <p>Gene Editing</p>
+                </div>
+                <div class="slide">
+                    <img src="images/gene-silencing.jpg" alt="Gene Silencing" class="image-slide" onclick="openFullscreen(this)">
+                    <p>Gene Silencing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fullscreen Image Modal -->
+    <div id="fullscreen-modal" class="modal">
+        <span class="close" onclick="closeFullscreen()">&times;</span>
+        <img class="modal-content" id="fullscreen-image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
